@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SingleWorkSample = ({ image, name, description, live, gitClint, gitServer }) => {
+const SingleWorkSample = ({ site }) => {
+    const { image_1, name, description, live } = site;
     return (
         <div
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(${image_1})` }}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
         >
             {/* Hover Effects */}
@@ -13,21 +15,16 @@ const SingleWorkSample = ({ image, name, description, live, gitClint, gitServer 
                 </span>
                 <p className='text-justify px-3'>{description}</p>
                 <div className='pt-4 text-center'>
-                    <a href={live}>
-                        <button className='text-center rounded-lg px-4 py-2 m-2 bg-slate-300 text-gray-700 font-bold text-lg'>
+                    <a href={live} className='text-center rounded-lg px-4 py-2 m-2 bg-slate-300 text-gray-700 font-bold text-lg'>
+                        <button >
                             Live
                         </button>
                     </a>
-                    <a href={gitClint}>
-                        <button className='text-center rounded-lg px-4 py-2 m-2 bg-slate-300 text-gray-700 font-bold text-lg'>
-                            Clint site code
+                    <Link to={'/project'} className='text-center rounded-lg px-4 py-2 m-2 bg-slate-300 text-gray-700 font-bold text-lg'>
+                        <button >
+                            Details
                         </button>
-                    </a>
-                    <a href={gitServer}>
-                        <button className='text-center rounded-lg px-4 py-2 m-2 bg-slate-300 text-gray-700 font-bold text-lg'>
-                            Server site code
-                        </button>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

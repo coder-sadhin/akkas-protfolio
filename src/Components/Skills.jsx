@@ -1,5 +1,17 @@
 import React from 'react';
 import Skilldiv from './Skilldiv';
+import html from '../assets/imgFo/html.png';
+import css from '../assets/imgFo/css.png';
+import bootstrap from '../assets/imgFo/bootstrap.png';
+import tailwindcss from '../assets/imgFo/tailwindcss.png';
+import javascript from '../assets/imgFo/javascript.png';
+import figma from '../assets/imgFo/figma.png';
+import reactjs from '../assets/imgFo/reactjs.png';
+import nodejs from '../assets/imgFo/nodejs.png';
+import mongodb from '../assets/imgFo/mongodb.png';
+import github from '../assets/imgFo/github.png';
+import firebase from '../assets/imgFo/firebase.png';
+import expressjs from '../assets/imgFo/expressjs.png';
 
 const Skills = () => {
     return (
@@ -10,21 +22,19 @@ const Skills = () => {
                     <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center '>Skills</p>
                     <p className='py-4 text-2xl'>I enjoy diving into and learning new things. Here's a list of technologies I've worked with</p>
                 </div>
-                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                    <Skilldiv>HTML</Skilldiv>
-                    <Skilldiv>CSS</Skilldiv>
-                    <Skilldiv>BOOTSTRAP</Skilldiv>
-                    <Skilldiv>TAILWIND CSS</Skilldiv>
-                    <Skilldiv>JAVASCRIPT</Skilldiv>
-                    <Skilldiv>REACT</Skilldiv>
-                    <Skilldiv>REACT ROUTER DOM</Skilldiv>
-                    <Skilldiv>GITHUB</Skilldiv>
-                    <Skilldiv>EXPRESS JS</Skilldiv>
-                    <Skilldiv>NODE JS</Skilldiv>
-                    <Skilldiv>MONGO DB</Skilldiv>
-                    <Skilldiv>JWT</Skilldiv>
-                    <Skilldiv>DAISY UI</Skilldiv>
-                    <Skilldiv>STYLED COMPONENT</Skilldiv>
+                <div className='w-full grid grid-cols-2 sm:grid-cols-6 gap-4 text-center py-8'>
+                    <Skilldiv data={'HTML'}>{html}</Skilldiv>
+                    <Skilldiv data={'Css'}>{css}</Skilldiv>
+                    <Skilldiv data={'bootstrap'}>{bootstrap}</Skilldiv>
+                    <Skilldiv data={'tailwind css'}>{tailwindcss}</Skilldiv>
+                    <Skilldiv data={'javascript'}>{javascript}</Skilldiv>
+                    <Skilldiv data={'figma DEsign'}>{figma}</Skilldiv>
+                    <Skilldiv data={'react js'}>{reactjs}</Skilldiv>
+                    <Skilldiv data={'node js'}>{nodejs}</Skilldiv>
+                    <Skilldiv data={'express js'}>{expressjs}</Skilldiv>
+                    <Skilldiv data={'mongodb'}>{mongodb}</Skilldiv>
+                    <Skilldiv data={'github'}>{github}</Skilldiv>
+                    <Skilldiv data={'firebase'}>{firebase}</Skilldiv>
                 </div>
             </div>
         </div>

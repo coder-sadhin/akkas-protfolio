@@ -3,8 +3,6 @@ import React from "react";
 const About = () => {
     return (
         <div
-            name="about"
-            id="about"
             className="w-full md:h-screen bg-[#0a192f] text-gray-300"
         >
             <div className="flex py-8 flex-col justify-center items-center w-full h-full">

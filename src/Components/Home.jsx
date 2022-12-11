@@ -1,7 +1,8 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import me from '../assets/akkas-ali.png';
-import { Link } from "react-scroll";
+import resume from '../assets/resume.pdf';
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -19,7 +20,7 @@ const Home = () => {
                         Currently, I working on web application using technologies like
                         React, Tailwind, Express.js and Mongodb.
                     </p>
-                    <div>
+                    <div className='flex gap-3'>
                         <Link
                             to="about"
                             smooth
@@ -31,6 +32,13 @@ const Home = () => {
                                 <HiArrowNarrowRight size={25} className="ml-3" />
                             </span>
                         </Link>
+                        <a
+                            href={resume}
+                            download
+                            className="group text-white hover:font-bold w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+                        >
+                            Download Resume
+                        </a>
                     </div>
                 </div>
                 <div className='md:w-6/12'>
